@@ -33,5 +33,5 @@
     </li>
   </ul>
 
-<h2>📫 Contact</h1>
+<h1>📫 Contact</h1>
   <p><strong>Email:</strong> Suhaan.Bhanwer16@gmail.com</p>
