@@ -18,7 +18,7 @@
       <p>
         A fully configured multi‑network topology built using real Cisco routers and switches. The project includes VLAN segmentation, Inter‑VLAN routing, Layer 2 security, static and            floating static routes, and complete subnetting/VLSM planning. Demonstrates practical, hands‑on experience with Cisco IOS, secure network design, and efficient IP addressing.
       </p>
-    <li><strong><a href=prime-number-generator/# prime_numbers.py>Prime Number Generator (2–70)<a></strong></li>
+    <li><strong><a href=prime-number-generator/prime_numbers.py>Prime Number Generator (2–70)<a></strong></li>
       <p>
         A simple but well‑structured program that calculates and displays all prime numbers between 2 and 70. Built to demonstrate clean logic, control flow, and beginner‑friendly                algorithm design.
       </p>
