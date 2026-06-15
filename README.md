@@ -20,7 +20,7 @@
       </p>
     <li><strong><a href="prime-number-generator">Prime Number Generator (2–70)<a></strong></li>
       <p>
-        A simple but well‑structured program that calculates and displays all prime numbers between 2 and 70. Built to demonstrate clean logic, control flow, and beginner‑friendly                algorithm design.
+        A simple but well‑structured program that calculates and displays all prime numbers between 2 and 70. Built to demonstrate proficiency in Python syntax, loops, and conditional            logic.
       </p>
   </ul>
 
