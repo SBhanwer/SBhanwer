@@ -30,4 +30,5 @@
   </ul>
 
 <h1>📫 Contact</h1>
-  <p><strong>Email:</strong> Suhaan.Bhanwer16@gmail.com</p>
+  <p><strong>Email</strong>: Suhaan.Bhanwer16@gmail.com</p>
+  <p><strong>LinkedIn</strong>: https://www.linkedin.com/in/suhaan-bhanwer-329429412/</p>
