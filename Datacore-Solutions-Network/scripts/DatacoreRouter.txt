@@ -1,0 +1,270 @@
+Building configuration...
+
+Current configuration : 5205 bytes
+!
+! Last configuration change at 13:06:56 UTC Wed Apr 8 2026
+!
+version 17.6
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+platform punt-keepalive disable-kernel-core
+platform hardware throughput crypto 15M
+!
+hostname DatacoreRouter
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+no ip domain lookup
+ip domain name Datacore.com
+ip dhcp excluded-address 10.160.0.1 10.160.0.10
+ip dhcp excluded-address 10.160.1.1 10.160.1.10
+!
+ip dhcp pool IT
+ network 10.160.0.0 255.255.255.128
+ default-router 10.160.0.1
+!
+ip dhcp pool HR
+ network 10.160.1.0 255.255.255.192
+ default-router 10.160.1.1
+!
+!
+!
+login on-success log
+!
+!
+!
+!
+!
+!
+!
+subscriber templating
+!
+!
+!
+!
+!
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-1266970963
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1266970963
+ revocation-check none
+ rsakeypair TP-self-signed-1266970963
+!
+!
+crypto pki certificate chain TP-self-signed-1266970963
+ certificate self-signed 01
+  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+  69666963 6174652D 31323636 39373039 3633301E 170D3236 30343038 31313232
+  34375A17 0D333630 34303731 31323234 375A3031 312F302D 06035504 03132649
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 32363639
+  37303936 33308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201
+  0A028201 0100955E DBBD8F69 3CB1D525 58B90313 06646C81 D9F69B37 5B5DD344
+  91751C32 AACEC93C 46D29FC2 42533637 16537966 4753B160 6CF9E57A A8652359
+  1B7E377B 35C9C45F 76216669 998495CA 32497753 A2B025A3 FC8BC5FB F3A890DF
+  DD941AC2 753018C3 1AAA4D53 990437A2 702685DA 6797E206 ED4A5D11 41DB5330
+  8750D126 19C895B5 D3E289D8 D792DCFF A141D1F5 512C9C70 1F57AC32 642BD3E6
+  8ABE8AFB 57C4887E E3BE43B8 C7E9C136 EC8B67C2 9CF59F9A AF849602 57E9C45C
+  79CA5DC4 AB7AD069 1C2F95AD 033DB7B0 E46D9691 20B804F9 5349FBEC 7FEB7808
+  18DD0EA1 CCED3F4D BDDEB3DA 74C2BD03 12984781 14714251 AC78E00A 2AEB3A79
+  405FD848 B01D0203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF
+  301F0603 551D2304 18301680 1464C08B C6B89B93 1B16E5A3 8AAEE127 AF970AE4
+  28301D06 03551D0E 04160414 64C08BC6 B89B931B 16E5A38A AEE127AF 970AE428
+  300D0609 2A864886 F70D0101 05050003 82010100 75E4786E 014BFA53 C99E5C45
+  6BAE8D30 822AF5F5 64E6DC8A 3F4000C7 52A0BEF4 EC32BFBB 726084C5 A6302507
+  5E81FB0B 67B93FA0 E6EB33CB 112348FB 318E64E2 CD8871E5 78715315 F6B70A9D
+  8288C649 FDC87563 D93553DE 0DD616F4 600181F8 883ADD1E E17415FF A19057C3
+  179504F0 6AA08E45 168341C5 5954E762 D99B9F29 F304E2DA 21CBD558 559F33B0
+  75D66B39 550D0D5F A589B08B 78DFD6DD 1ED9F676 CC8C8DBC 259A1753 CD127962
+  783C9029 6F20D36E 422D1E59 4069104D 87E8365E 54A86A80 8A1A291A 6DFB498F
+  9CF902F8 FEC3DE2B 991D4F01 D81C1D76 C65DEC0D A8E05EBB 0E6C4E77 D5F7A323
+  0DC1E1F8 76E859DB 95E1E77B 7434899D C1917DDF
+        quit
+!
+!
+!
+!
+!
+!
+!
+!
+!
+license udi pid C8200L-1N-4T sn FJC27291G9P
+license boot level network-advantage addon dna-advantage
+memory free low-watermark processor 67482
+!
+diagnostic bootup level minimal
+!
+spanning-tree extend system-id
+!
+username DatacoreAdmin secret 9 $9$rWUIz/JwHu4re.$fjR3tkl1mJHlMRdEWdeSfb.5PdqhdW1ruYMb7ma6nHQ
+!
+redundancy
+ mode none
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ no ip address
+ negotiation auto
+!
+interface GigabitEthernet0/0/0.10
+ description Sub-interface for IT VLAN
+ encapsulation dot1Q 10
+ ip address 10.160.0.1 255.255.255.128
+!
+interface GigabitEthernet0/0/0.20
+ description Sub-interface for Customer Service VLAN
+ encapsulation dot1Q 20
+ ip address 10.160.0.129 255.255.255.192
+!
+interface GigabitEthernet0/0/0.30
+ description Sub-interface for Sales and Marketing VLAN
+ encapsulation dot1Q 30
+ ip address 10.160.0.193 255.255.255.192
+!
+interface GigabitEthernet0/0/0.40
+ description Sub-interface for the HR VLAN
+ encapsulation dot1Q 40
+ ip address 10.160.1.1 255.255.255.192
+!
+interface GigabitEthernet0/0/0.50
+ description Sub-interface for the Management VLAN
+ encapsulation dot1Q 50
+ ip address 10.160.1.193 255.255.255.224
+!
+interface GigabitEthernet0/0/0.60
+ description Sub-interface for System Admins 60
+ encapsulation dot1Q 60
+ ip address 10.160.1.65 255.255.255.192
+!
+interface GigabitEthernet0/0/0.70
+ description Sub-interface for Accounting 70
+ encapsulation dot1Q 70
+ ip address 10.160.1.129 255.255.255.192
+!
+interface GigabitEthernet0/0/0.80
+ description Sub-interface for Legal 80
+ encapsulation dot1Q 80
+ ip address 10.160.1.225 255.255.255.224
+!
+interface GigabitEthernet0/0/0.1000
+ description Native VLAN
+ encapsulation dot1Q 1000 native
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ negotiation auto
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ negotiation auto
+!
+interface GigabitEthernet0/0/3
+ no ip address
+ negotiation auto
+!
+interface Serial0/1/0
+ description primary link to Rogers ISP1
+ ip address 101.1.1.1 255.255.255.252
+ clock rate 256000
+!
+interface Serial0/1/1
+ description back up link to bell ISP2
+ ip address 101.1.2.1 255.255.255.252
+!
+ip http server
+ip http authentication local
+ip http secure-server
+ip forward-protocol nd
+ip route 0.0.0.0 0.0.0.0 101.1.1.2
+ip route 0.0.0.0 0.0.0.0 101.1.2.2 10
+ip route 101.1.1.0 255.255.255.252 Serial0/1/0
+ip route 101.1.2.0 255.255.255.252 Serial0/1/1 10
+ip ssh version 2
+!
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+mgcp behavior rsip-range tgcp-only
+mgcp behavior comedia-role none
+mgcp behavior comedia-check-media-src disable
+mgcp behavior comedia-sdp-force disable
+!
+mgcp profile default
+!
+!
+!
+!
+!
+banner motd ^CC Unauthorized Access is Prohibited ^C
+!
+line con 0
+ password 7 054F211D2E595E583A2A39
+ login
+ stopbits 1
+line aux 0
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 14
+ login
+ transport input ssh
+!
+!
+!
+!
+!
+!
+end
