@@ -14,7 +14,7 @@
 <h1>🚀 Featured Projects</h1>
 
   <ul>
-    <li><strong>Networking Infrastructure Design on Cisco Equipment</strong></li>
+    <li><strong><a href="Datacore-Solutions-Network">Networking Infrastructure Design on Cisco Equipment</a></strong></li>
       <p>
         A fully configured multi‑network topology built using real Cisco routers and switches. The project includes VLAN segmentation, Inter‑VLAN routing, Layer 2 security, static and            floating static routes, and complete subnetting/VLSM planning. Demonstrates practical, hands‑on experience with Cisco IOS, secure network design, and efficient IP addressing.
       </p>
