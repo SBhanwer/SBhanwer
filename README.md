@@ -26,7 +26,7 @@
 
 <h1> Currently Working On</h1>
   <ul>
-    <li><b>Network Traffic & Incident Analysis (Wireshark)</b>: Analyzing PCAP files and drafting an incident investigation report.</li>
+    <li><b>To Be Determined</li>
   </ul>
 
 <h1> Contact</h1>
