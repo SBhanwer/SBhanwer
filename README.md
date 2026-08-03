@@ -1,6 +1,6 @@
 <h1>👋 Hi, I’m Suhaan</h1>
   <p>
-    Welcome to my project portfolio. I’m a developer studying at Durham College and Ontario Tech University, building networking and coding projects. This repository showcases the work       I’m most proud of — academic, personal, and experimental.
+    Welcome to my project portfolio. I’m a IT student studying at Durham College and Ontario Tech University, building networking and coding projects. This repository showcases the work       I’m most proud of — academic, personal, and experimental.
   </p>
 
 <h1> Skills & Tools</h1>
