@@ -1,6 +1,6 @@
 <h1>Hi, I’m Suhaan</h1>
   <p>
-    Welcome to my project portfolio. I’m a IT student studying at Durham College and Ontario Tech University, building networking and coding projects. This repository showcases the work       I’m most proud of.
+    Welcome to my project portfolio. I’m an IT student studying at Durham College and Ontario Tech University, building networking and coding projects. This repository showcases the work       I’m most proud of.
   </p>
 
 <h1> Skills & Tools</h1>
@@ -26,7 +26,7 @@
 
 <h1> Currently Working On</h1>
   <ul>
-    <li>To Be Determined</li>
+    <li><b>Network Traffic & Incident Analysis (Wireshark)</b>: Analyzing PCAP files and drafting an incident investigation report.</li>
   </ul>
 
 <h1> Contact</h1>
