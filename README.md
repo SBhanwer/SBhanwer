@@ -22,11 +22,15 @@
       <p>
         A simple but well‑structured program that calculates and displays all prime numbers between 2 and 70. Built to demonstrate proficiency in Python syntax, loops, and conditional            logic.
       </p>
+    <li><strong>JIRA Cloud Helpdesk Deployment Guide</strong></li>
+      <p>
+        A comprehensive, step-by-step Standard Operating Procedure for setting up and deploying a functional **JIRA Cloud Helpdesk Instance**.
+      </p>
   </ul>
 
 <h1> Currently Working On</h1>
   <ul>
-    <li><b>To Be Determined</li>
+    <li><strong>To Be Determined</strong></li>
   </ul>
 
 <h1> Contact</h1>
