@@ -24,7 +24,7 @@
       </p>
     <li><strong>JIRA Cloud Helpdesk Deployment Guide</strong></li>
       <p>
-        A comprehensive, step-by-step Standard Operating Procedure for setting up and deploying a functional **JIRA Cloud Helpdesk Instance**.
+        A comprehensive, step-by-step Standard Operating Procedure for setting up and deploying a functional <u>JIRA Cloud Helpdesk Instance</u>.
       </p>
   </ul>
 
